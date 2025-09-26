@@ -1,0 +1,205 @@
+/* ====== GLOBAL STYLES ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #ff6347; /* Tomato color */
+}
+
+/* ====== HEADER ====== */
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #ff6347;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+}
+
+/* ====== HERO ====== */
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 101vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff6347;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e5533d;
+}
+
+/* ====== ABOUT ====== */
+.about {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* ====== MENU ====== */
+.menu {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.menu-item h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-item p {
+  font-weight: bold;
+  color: #ff6347;
+}
+
+/* ====== PROMO BANNER ====== */
+.promo {
+  background: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.promo h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.promo .btn {
+  background: white;
+  color: #ff6347;
+}
+
+.promo .btn:hover {
+  background: #f1f1f1;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.whatsapp-btn {
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
